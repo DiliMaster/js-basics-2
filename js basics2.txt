@@ -1,0 +1,33 @@
+[ ]
+
+javascript
+// Program to check if a number is even or odd
+function checkEvenOdd(num) {
+// Using the modulo operator
+  if (num % 2 === 0) {
+    console.log(`${num} is an even number.`);
+  } else {
+    console.log(`${num} is an odd number.`);
+  }
+
+// Using ternary operator
+  const result = num % 2 === 0 ? "even" : "odd";
+  console.log(`${num} is an ${result} number.`);
+}
+
+// Test the function
+checkEvenOdd(7);// odd
+checkEvenOdd(10);// even// More complex example with multiple conditions
+function checkNumber(num) {
+  if (num > 0) {
+    console.log(`${num} is positive.`);
+  } else if (num < 0) {
+    console.log(`${num} is negative.`);
+  } else {
+    console.log(`${num} is zero.`);
+  }
+}
+
+checkNumber(15);// positive
+checkNumber(-5);// negative
+checkNumber(0);// zero
